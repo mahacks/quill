@@ -86,6 +86,22 @@
           </textarea>
         </div>
 
+        <div class="field"
+             ng-hide="isMitStudent">
+          <p>
+            Non-bold text
+          </p>
+          <p>
+            <strong>
+            Bold-text
+            </strong>
+          </p>
+          <div class="ui checkbox">
+            <input type="checkbox" id="adult" ng-model="user.profile.adult">
+            <label for="adult">I am 18 or older (from HackMIT)</label>
+          </div>
+        </div>
+
         <br>
 
         <div class="field" ng-hide="regIsClosed">
