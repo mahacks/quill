@@ -9,6 +9,10 @@
 
   @include transition-duration($sidebar-transition-time);
 
+  .logo.item img {
+    width: 100%
+  }
+
   .item {
     width: 100%;
     padding: 16px;
