@@ -26,6 +26,12 @@ angular.module('reg')
           }
         }
       })
+      /*.state('tracks', {
+        url: "/tracks",
+        templateUrl: "views/tracks/tracks.html",
+        controller: 'TracksCtrl',
+
+      })*/
       .state('app', {
         views: {
           '': {
