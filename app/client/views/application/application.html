@@ -67,7 +67,6 @@
             <option value="M">Male</option>
             <option value="F">Female</option>
             <option value="O">Other</option>
-            <option value="N">I prefer not to answer.</option>
           </select>
         </div>
 
@@ -76,6 +75,19 @@
           <input type="text"
                  placeholder="Designer, Data Scientist, iOS Wizard, Hacker Extraordinaire"
                  ng-model="user.profile.description">
+        </div>
+
+        <div class="field">
+          <label>How did you learn about MAHacks?</label>
+          <input type="text"
+                 placeholder="Flyer, teacher, social media"
+                 ng-model="user.profile.outreach">
+        </div>
+
+        <div class="field">
+          <label>If a fellow MAHacks participant referred you, please put their name here.</label>
+          <input type="text"
+                 ng-model="user.profile.referral">
         </div>
 
         <div class="field">

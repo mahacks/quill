@@ -60,7 +60,7 @@ var profile = {
   gender: {
     type: String,
     enum : {
-      values: 'M F O N'.split(' ')
+      values: 'M F O'.split(' ')
     }
   },
 
