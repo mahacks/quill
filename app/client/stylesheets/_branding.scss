@@ -4,7 +4,14 @@
  * tertiary (default blue): waitlist/declined dashboard status
  */
 
+/** HackMIT Branding Colors
 $primary: #e76482;
+$secondary: #473899;
+$tertiary: #4c82cc;
+*/
+
+/* MAHacks Branding Colors (soft blue, purple, moderate blue) */
+$primary: #64c4e7;
 $secondary: #473899;
 $tertiary: #4c82cc;
 
@@ -12,4 +19,4 @@ $tertiary: #4c82cc;
  * login-bg: image for login splash page 
  */
 
-$login-bg: url('assets/images/mahacks-i.jpg');
+$login-bg: url('../assets/images/mahacks-i.jpg');
