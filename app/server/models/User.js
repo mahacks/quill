@@ -38,6 +38,18 @@ var profile = {
     max: 300
   },
 
+  outreach: {
+    type: String,
+    min: 0,
+    max: 500
+  },
+
+  referral: {
+    type: String,
+    min: 0,
+    max: 500
+  },
+
   essay: {
     type: String,
     min: 0,
