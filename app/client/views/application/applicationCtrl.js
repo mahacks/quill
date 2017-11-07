@@ -23,51 +23,9 @@ angular.module('reg')
 
       $scope.user.profile.adult = true;
 
-      // Populate the school dropdown
-      populateSchools();
       _setupForm();
 
       $scope.regIsClosed = Date.now() > Settings.data.timeClose;
-
-      /**
-       * TODO: JANK WARNING
-       */
-      function populateSchools(){
-        $http
-          .get('/assets/schools.json')
-          .then(function(res){
-            var schools = res.data;
-            var email = $scope.user.email.split('@')[1];
-
-            if (schools[email]){
-              $scope.user.profile.school = schools[email].school;
-              $scope.autoFilledSchool = true;
-            }
-          });
-
-        $http
-          .get('/assets/schools.csv')
-          .then(function(res){ 
-            $scope.schools = res.data.split('\n');
-            $scope.schools.push('Other');
-
-            var content = [];
-
-            for(i = 0; i < $scope.schools.length; i++) {                                          
-              $scope.schools[i] = $scope.schools[i].trim(); 
-              content.push({title: $scope.schools[i]})
-            }
-
-            $('#school.ui.search')
-              .search({
-                source: content,
-                cache: true,     
-                onSelect: function(result, response) {                                    
-                  $scope.user.profile.school = result.title.trim();
-                }        
-              })             
-          });          
-      }
 
       function _updateUser(e){
         UserService
