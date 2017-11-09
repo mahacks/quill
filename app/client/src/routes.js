@@ -26,12 +26,16 @@ angular.module('reg')
           }
         }
       })
-      /*.state('tracks', {
+      .state('tracks', {
         url: "/tracks",
         templateUrl: "views/tracks/tracks.html",
         controller: 'TracksCtrl',
-
-      })*/
+        resolve: {
+          'settings': function(SettingsService){
+            return SettingsService.getPublicSettings();
+          }
+        }
+      })
       .state('app', {
         views: {
           '': {
