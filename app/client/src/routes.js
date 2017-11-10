@@ -26,7 +26,7 @@ angular.module('reg')
           }
         }
       })
-      .state('tracks', {
+      .state('app.tracks', {
         url: "/tracks",
         templateUrl: "views/tracks/tracks.html",
         controller: 'TracksCtrl',

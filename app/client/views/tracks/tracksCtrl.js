@@ -3,7 +3,8 @@ angular.module('reg')
 		'$scope',
 		'currentUser',
 		'settings',
-		function($scope, currentUser, settings){
+		'UserService',
+		function($scope, currentUser, settings, UserService){
 			var Settings = settings.data;
 
 			$scope.user = currentUser.data;
