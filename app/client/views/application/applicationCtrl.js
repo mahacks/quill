@@ -21,6 +21,7 @@ angular.module('reg')
         $scope.user.profile.adult = true;
       }
 
+      // MAHacks: make this true for everyone; otherwise remove ALL requirements in the code for adult status
       $scope.user.profile.adult = true;
 
       _setupForm();
