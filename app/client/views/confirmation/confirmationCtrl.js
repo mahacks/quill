@@ -92,7 +92,7 @@ angular.module('reg')
                   prompt: 'Please enter a phone number.'
                 }
               ]
-            },
+            }/*,
             signatureLiability: {
               identifier: 'signatureLiabilityWaiver',
               rules: [
@@ -119,7 +119,7 @@ angular.module('reg')
                   prompt: 'Please type your digital signature.'
                 }
               ]
-            },
+            },*/
           }
         });
       }
